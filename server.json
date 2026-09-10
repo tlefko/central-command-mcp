@@ -1,0 +1,48 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tlefko/central-command",
+  "title": "Central Command",
+  "displayName": "Central Command — x402 Trading Intelligence",
+  "description": "Pay-per-use crypto trading MCP: market-intel packs, sanitized fade signals, funding/liquidations, backtests, AI agent strategy console, and position sizing via x402 micropayments on Base USDC. Free tier available with linked Connect keys.",
+  "version": "1.2.0",
+  "publisher": {
+    "name": "Central Command",
+    "url": "https://centralcommand.app"
+  },
+  "contactEmail": "support@centralcommand.app",
+  "license": "proprietary",
+  "websiteUrl": "https://centralcommand.app",
+  "documentationUrl": "https://centralcommand.app/mcp",
+  "icons": [
+    {
+      "src": "https://rtcelwjnrbmfmrywacky.supabase.co/functions/v1/mcp/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/tlefko/central-command",
+    "source": "github"
+  },
+  "categories": ["finance", "trading", "crypto", "ai-agents", "market-data"],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rtcelwjnrbmfmrywacky.supabase.co/functions/v1/mcp",
+      "headers": [
+        {
+          "name": "X-Api-Key",
+          "description": "Optional prepaid key from POST /x402-gateway/register (or Tasks → Connect). Omit for pure x402 pay-per-use.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "X-PAYMENT",
+          "description": "Optional x402 payment proof (retry after 402 accepts). Also accepted as tool arg __x_payment.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Never commit secrets or private data
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.keystore
+*secret*
+*credentials*
+service-role*
+# Private data / PII
+*.csv
+affiliate_report*
+*connected_report*
+# Local / build artifacts
+node_modules/
+dist/
+build/
+.DS_Store

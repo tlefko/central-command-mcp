@@ -1,0 +1,79 @@
+# Smithery configuration for Central Command MCP
+# https://smithery.ai
+# Top-level metadata fields are required for Server Metadata quality score.
+
+version: 1
+
+name: central-command
+displayName: Central Command
+description: >-
+  Crypto trading intelligence MCP for AI agents — market-intel packs, sanitized
+  fade signals, funding/liquidations, public strategy discovery, backtests, and
+  a paper-first strategy console. Pay-per-use via x402 (Base USDC), prepaid
+  X-Api-Key, or free linked Connect keys.
+homepage: https://centralcommand.app
+documentation: https://rtcelwjnrbmfmrywacky.supabase.co/functions/v1/x402-docs
+icon: https://rtcelwjnrbmfmrywacky.supabase.co/functions/v1/mcp/icon.svg
+
+runtime: remote
+
+remote:
+  transport: streamable-http
+  url: https://rtcelwjnrbmfmrywacky.supabase.co/functions/v1/mcp
+
+categories:
+  - finance
+  - crypto
+  - trading
+  - ai-agents
+  - data
+
+keywords:
+  - mcp
+  - x402
+  - trading
+  - crypto
+  - funding-rates
+  - liquidations
+  - fade-signals
+  - market-intel
+  - backtesting
+  - ai-agents
+  - derivatives
+  - remote-mcp
+
+features:
+  tools: true
+  resources: true
+  prompts: true
+
+maintainer:
+  name: Central Command
+  url: https://centralcommand.app
+  email: support@central-command.ai
+
+# Remote Streamable HTTP — no local install required.
+startCommand:
+  type: http
+  url: https://rtcelwjnrbmfmrywacky.supabase.co/functions/v1/mcp
+  configSchema:
+    type: object
+    required: []
+    properties:
+      apiKey:
+        type: string
+        title: X-Api-Key (optional prepaid)
+        description: >-
+          Prepaid key from POST /x402-gateway/register or Tasks → Connect.
+          Leave empty for pure x402 pay-per-use (tool returns 402 accepts →
+          retry with X-PAYMENT / __x_payment).
+        "x-from":
+          header: X-Api-Key
+      payment:
+        type: string
+        title: X-PAYMENT (optional)
+        description: x402 payment proof after settling Base USDC from a 402 challenge
+        "x-from":
+          header: X-PAYMENT
+  exampleConfig:
+    apiKey: x402_YOUR_KEY_HERE
