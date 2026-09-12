@@ -7,7 +7,7 @@
 | | |
 |---|---|
 | 🌐 Product | https://centralcommand.io |
-| 🧩 MCP page | https://centralcommand.io/mcp |
+| 🧩 MCP page | https://centralcommand.io/api |
 | 🛰️ Smithery | https://smithery.ai/servers/@lefkotyler/central-command |
 | 🆔 MCP Registry | `io.github.tlefko/central-command` |
 
