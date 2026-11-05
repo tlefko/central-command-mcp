@@ -7,13 +7,12 @@
 | | |
 |---|---|
 | 🌐 Product | https://centralcommand.io |
-| 🧩 MCP page | https://centralcommand.io/api |
-| 🛰️ Smithery | https://smithery.ai/servers/@lefkotyler/central-command |
+| 🧩 MCP page | https://centralcommand.io/mcp |
 | 🆔 MCP Registry | `io.github.tlefko/central-command` |
 
 ## What it does
 
-**36+ live endpoints** exposing crypto trading intelligence to any MCP client:
+**26 live endpoints** exposing crypto trading intelligence to any MCP client:
 
 - **Market‑intel packs** — funding rates, liquidations, and derivatives data
 - **Sanitized fade signals** — crowd‑positioning intelligence
@@ -25,7 +24,7 @@ Every endpoint publishes an explicit price in `cc.list_catalog`.
 
 ## Connect (one line)
 
-Add to your MCP client — Claude Desktop, Cursor, Smithery, Glama, or any Streamable HTTP client:
+Add to your MCP client — Claude Desktop, Cursor or any Streamable HTTP client:
 
 ```json
 {
