@@ -50,7 +50,6 @@ Execution is **paper‑first**. Live orders require an explicit `confirm_live` s
 ## Discovery
 
 - **Official MCP Registry:** `io.github.tlefko/central-command`
-- **Smithery:** https://smithery.ai/servers/@lefkotyler/central-command
 - **Agent crawl file:** `llms.txt` (served from the MCP docs endpoint)
 
 ## Docs in this repo
