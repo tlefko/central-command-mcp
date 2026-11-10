@@ -10,6 +10,25 @@
 | 🧩 MCP page | https://centralcommand.io/mcp |
 | 🆔 MCP Registry | `io.github.tlefko/central-command` |
 
+## Central Command, the product
+
+The MCP server is one part of [Central Command](https://centralcommand.io): a crypto trading terminal and AI agent builder for BloFin accounts, on the web and as a desktop app.
+
+- **A BloFin trading bot without code:** write entries, exits and risk in plain English at [centralcommand.io/agents/new](https://centralcommand.io/agents/new). The agent backtests on closed BloFin candles with fees and funding, runs on paper, and goes live on your own BloFin account when you choose.
+- **TradingView alerts to BloFin:** a signal agent takes your TradingView webhook and places the trade on BloFin ([setup guide](https://centralcommand.io/blog/tradingview-alerts-to-blofin)).
+- **Prop firm challenge backtests:** test an agent against a funded-account challenge's rules (profit target, daily loss, static or trailing max loss, trading days, time limit) and see pass or fail, the rule and day that ended it, and the pass rate across up to 60 start days ([how it works](https://centralcommand.io/docs/ai-agents)).
+- **Your own AI:** connect Claude, Cursor or any MCP client (below) to research, backtest and run paper-first agents from one conversation.
+
+### Start free
+
+Central Command is free with a BloFin account opened through our referral link, for as long as you trade through us. Or take the 10-day free trial: no card, no wallet, nothing renews.
+
+1. Create an account at https://centralcommand.io/signup.
+2. Choose **Free with BloFin** and connect BloFin in one click (no BloFin account yet? open one at https://partner.blofin.com/d/centralcommand), or choose the **10-day free trial**.
+3. Trade from the terminal at https://centralcommand.io/dataterminal, or describe a strategy in plain English at https://centralcommand.io/agents/new: backtest it, run it on paper, and go live when you choose.
+
+BloFin's normal trading fees still apply. Central Command trades BloFin perpetual futures only. Leveraged trading can lose all of your money.
+
 ## What it does
 
 **26 live endpoints** exposing crypto trading intelligence to any MCP client:
